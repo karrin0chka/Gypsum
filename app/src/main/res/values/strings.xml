@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gypsum</string>
+    <string name="logo">Калькулятор составляющих</string>
+    <string name="volumeHeadline">Введите объем готового раствора (мл):</string>
+</resources>

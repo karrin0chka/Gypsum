@@ -16,5 +16,6 @@
     <string name="svvHeadline">СВВ (г):</string>
     <string name="svvOutput">0</string>
 
+    <string name="volumeInputError">Введите корреткное значение</string>
 
 </resources>

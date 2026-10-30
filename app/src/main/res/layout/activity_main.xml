@@ -21,31 +21,115 @@
             android:layout_marginTop="20sp"
             android:text="@string/logo"
             android:textAlignment="center"
-            android:textSize="21sp"
-            android:textColor="@color/colorMain"/>
+            android:textColor="@color/colorMain"
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/volumeHeadline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/volumeHeadline"
-            android:textSize="18sp"
-            android:layout_marginHorizontal="20sp"
             android:layout_below="@+id/logo"
-            android:layout_marginTop="10sp"/>
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/volumeHeadline"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/volumeInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="0"
-            android:textSize="18sp"
-            android:layout_marginHorizontal="20sp"
             android:layout_below="@+id/volumeHeadline"
-            android:layout_marginTop="10sp"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="5sp"
             android:backgroundTint="@color/colorMain"
-            />
+            android:ems="10"
+            android:hint="@string/volumeInput"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/calculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volumeInput"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="25sp"
+            android:backgroundTint="@color/colorMain"
+            android:text="@string/calculatorButton"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/componentsOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calculatorButton"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="40sp"
+            android:text="@string/componentsOutput"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/gypsumHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/componentsOutput"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="25sp"
+            android:text="@string/gypsumHeadline"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gypsumOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gypsumHeadline"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="10sp"
+            android:hint="@string/gypsumOutput"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/waterHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gypsumOutput"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="25sp"
+            android:text="@string/waterHeadline"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/waterOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterHeadline"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="10sp"
+            android:hint="@string/waterOutput"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/svvHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterOutput"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="25sp"
+            android:text="@string/svvHeadline"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/svvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/svvHeadline"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="10sp"
+            android:hint="@string/svvOutput"
+            android:textSize="20sp" />
+
+
+
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

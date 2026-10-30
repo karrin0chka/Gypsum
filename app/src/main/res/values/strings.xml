@@ -1,5 +1,20 @@
 <resources>
+
     <string name="app_name">Gypsum</string>
     <string name="logo">Калькулятор составляющих</string>
-    <string name="volumeHeadline">Введите объем готового раствора (мл):</string>
+    <string name="volumeHeadline">Введите объем раствора (мл):</string>
+    <string name="volumeInput">0</string>
+    <string name="calculatorButton">Рассчитать</string>
+
+    <string name="componentsOutput">Требуемые компоненты:</string>
+    <string name="gypsumHeadline">Гипс (г):</string>
+    <string name="gypsumOutput">0</string>
+
+    <string name="waterHeadline">Вода (г):</string>
+    <string name="waterOutput">0</string>
+
+    <string name="svvHeadline">СВВ (г):</string>
+    <string name="svvOutput">0</string>
+
+
 </resources>

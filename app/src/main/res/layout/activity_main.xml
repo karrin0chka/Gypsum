@@ -49,12 +49,25 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/calculatorButton"
-            android:layout_width="match_parent"
+            android:id="@+id/clearButton"
+            android:layout_width="170sp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/volumeInput"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="25sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:backgroundTint="@color/colorClearButton"
+            android:text="@string/clearButton"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/calculatorButton"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volumeInput"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/colorMain"
             android:text="@string/calculatorButton"
             android:textSize="20sp" />
@@ -63,18 +76,18 @@
             android:id="@+id/componentsOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/calculatorButton"
+            android:layout_below="@+id/clearButton"
             android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="40sp"
+            android:layout_marginTop="30sp"
             android:text="@string/componentsOutput"
             android:textSize="22sp" />
 
         <TextView
             android:id="@+id/gypsumHeadline"
-            android:layout_width="match_parent"
+            android:layout_width="80sp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/componentsOutput"
-            android:layout_marginHorizontal="40sp"
+            android:layout_marginStart="40sp"
             android:layout_marginTop="15sp"
             android:text="@string/gypsumHeadline"
             android:textSize="20sp" />
@@ -83,19 +96,21 @@
             android:id="@+id/gypsumOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/gypsumHeadline"
-            android:layout_marginHorizontal="50sp"
-            android:layout_marginTop="5sp"
+            android:layout_below="@+id/componentsOutput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="15sp"
             android:hint="@string/gypsumOutput"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/waterHeadline"
-            android:layout_width="match_parent"
+            android:layout_width="80sp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/gypsumOutput"
-            android:layout_marginHorizontal="40sp"
-            android:layout_marginTop="10sp"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="15sp"
             android:text="@string/waterHeadline"
             android:textSize="20sp" />
 
@@ -103,19 +118,21 @@
             android:id="@+id/waterOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/waterHeadline"
-            android:layout_marginHorizontal="50sp"
-            android:layout_marginTop="5sp"
+            android:layout_below="@+id/gypsumOutput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="15sp"
             android:hint="@string/waterOutput"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/svvHeadline"
-            android:layout_width="match_parent"
+            android:layout_width="80sp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/waterOutput"
             android:layout_marginHorizontal="40sp"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="15sp"
             android:text="@string/svvHeadline"
             android:textSize="20sp" />
 
@@ -123,9 +140,11 @@
             android:id="@+id/svvOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/svvHeadline"
-            android:layout_marginHorizontal="50sp"
-            android:layout_marginTop="5sp"
+            android:layout_below="@+id/waterOutput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="15sp"
             android:hint="@string/svvOutput"
             android:textSize="20sp" />
 

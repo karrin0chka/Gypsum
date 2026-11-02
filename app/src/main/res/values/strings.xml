@@ -5,6 +5,7 @@
     <string name="volumeHeadline">Введите объем раствора (мл):</string>
     <string name="volumeInput">0</string>
     <string name="calculatorButton">Рассчитать</string>
+    <string name="clearButton">Очистить</string>
 
     <string name="componentsOutput">Требуемые компоненты:</string>
     <string name="gypsumHeadline">Гипс (г):</string>

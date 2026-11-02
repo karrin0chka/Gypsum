@@ -1,7 +1,9 @@
 package com.example.gypsum;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -50,12 +52,17 @@ public class MainActivity extends AppCompatActivity {
         calculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Получаем системный сервис для работы с методом ввода
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                // Скрываем клавиатуру, передавая токен окна текущего фокуса
+                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
                 if(volumeInput.getText().toString().trim().isEmpty()) {
                     Toast.makeText(MainActivity.this, R.string.volumeInputError, Toast.LENGTH_SHORT).show();
                 } else {
-                    double gypsumIndex = 0,
-                            waterIndex = 0,
-                            svvIndex = 0;
+                    double gypsumIndex,
+                            waterIndex,
+                            svvIndex;
 
                     String gypsumInputText = gypsumInput.getText().toString().trim();
                     String waterInputText = waterInput.getText().toString().trim();

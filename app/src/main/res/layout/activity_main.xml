@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/logo"
             android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="5sp"
             android:text="@string/volumeHeadline"
             android:textSize="22sp" />
 
@@ -48,14 +48,91 @@
             android:inputType="text"
             android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/proportionsHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volumeInput"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/proportionsHeadline"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/gypsumHeadlineInput"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proportionsHeadline"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="15sp"
+            android:text="@string/gypsumHeadline"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/gypsumInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proportionsHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/gypsumInput"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/waterHeadlineInput"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gypsumHeadlineInput"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="15sp"
+            android:text="@string/waterHeadline"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/waterInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gypsumHeadlineInput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/waterInput"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/svvHeadlineInput"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterHeadlineInput"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="15sp"
+            android:text="@string/svvHeadline"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/svvInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterHeadlineInput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="5sp"
+            android:hint="@string/svvInput"
+            android:textSize="20sp" />
+
+
         <Button
             android:id="@+id/clearButton"
             android:layout_width="170sp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/volumeInput"
+            android:layout_below="@+id/svvHeadlineInput"
             android:layout_alignParentStart="true"
             android:layout_marginStart="20sp"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="20sp"
             android:backgroundTint="@color/colorClearButton"
             android:text="@string/clearButton"
             android:textSize="20sp" />
@@ -64,10 +141,10 @@
             android:id="@+id/calculatorButton"
             android:layout_width="170sp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/volumeInput"
+            android:layout_below="@+id/svvHeadlineInput"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="20sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/colorMain"
             android:text="@string/calculatorButton"
             android:textSize="20sp" />
@@ -78,7 +155,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/clearButton"
             android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="30sp"
+            android:layout_marginTop="20sp"
             android:text="@string/componentsOutput"
             android:textSize="22sp" />
 

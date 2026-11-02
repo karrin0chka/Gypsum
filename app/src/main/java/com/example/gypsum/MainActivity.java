@@ -15,6 +15,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private EditText volumeInput;
+    private EditText gypsumInput;
+    private EditText waterInput;
+    private EditText svvInput;
     private Button clearButton;
     private Button calculatorButton;
     private TextView gypsumOutput;
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         // для возможности изменять/работать графический объект из кода
         volumeInput = findViewById(R.id.volumeInput);
+        gypsumInput = findViewById(R.id.gypsumInput);
+        waterInput = findViewById(R.id.waterInput);
+        svvInput = findViewById(R.id.svvInput);
         clearButton = findViewById(R.id.clearButton);
         calculatorButton = findViewById(R.id.calculatorButton);
         gypsumOutput = findViewById(R.id.gypsumOutput);
@@ -47,9 +53,38 @@ public class MainActivity extends AppCompatActivity {
                 if(volumeInput.getText().toString().trim().isEmpty()) {
                     Toast.makeText(MainActivity.this, R.string.volumeInputError, Toast.LENGTH_SHORT).show();
                 } else {
-                    double gypsumIndex = 0.62;
-                    double waterIndex = 1.88;
-                    double svvIndex = 124;
+                    double gypsumIndex = 0,
+                            waterIndex = 0,
+                            svvIndex = 0;
+
+                    String gypsumInputText = gypsumInput.getText().toString().trim();
+                    String waterInputText = waterInput.getText().toString().trim();
+                    String svvInputText = svvInput.getText().toString().trim();
+
+                    if(gypsumInputText.isEmpty() &&
+                        waterInputText.isEmpty() &&
+                        svvInputText.isEmpty()) {
+                        gypsumIndex = 0.62;
+                        waterIndex = 1.88;
+                        svvIndex = 124.0;
+                    } else if(!gypsumInputText.isEmpty() &&
+                            !waterInputText.isEmpty() &&
+                            !svvInputText.isEmpty()) {
+                        int gypsumInputValue = Integer.parseInt(gypsumInputText);
+                        int waterInputValue = Integer.parseInt(waterInputText);
+                        int svvInputValue = Integer.parseInt(svvInputText);
+
+                        int mass = gypsumInputValue + waterInputValue + svvInputValue;
+                        double density = 2.153;
+                        double volume = mass / density;
+
+                        gypsumIndex = volume / gypsumInputValue;
+                        waterIndex = volume / waterInputValue;
+                        svvIndex = volume / svvInputValue;
+                    } else {
+                        Toast.makeText(MainActivity.this, R.string.proportionsInputError, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
                     double gypsumValue = Integer.parseInt(volumeInput.getText().toString()) / gypsumIndex;
                     double gypsumValueRound = Math.round(gypsumValue * 10) / 10.0;
@@ -72,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 volumeInput.setText("");
+                gypsumInput.setText("");
+                waterInput.setText("");
+                svvInput.setText("");
                 gypsumOutput.setText("");
                 waterOutput.setText("");
                 svvOutput.setText("");

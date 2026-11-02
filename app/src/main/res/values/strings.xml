@@ -4,6 +4,12 @@
     <string name="logo">Калькулятор компонентов</string>
     <string name="volumeHeadline">Введите объем раствора (мл):</string>
     <string name="volumeInput">0</string>
+
+    <string name="proportionsHeadline">Введите пропорции (г):</string>
+    <string name="gypsumInput">1000</string>
+    <string name="waterInput">330</string>
+    <string name="svvInput">5</string>
+
     <string name="calculatorButton">Рассчитать</string>
     <string name="clearButton">Очистить</string>
 
@@ -18,5 +24,6 @@
     <string name="svvOutput">0</string>
 
     <string name="volumeInputError">Введите корреткное значение</string>
+    <string name="proportionsInputError">Введите корреткные значения пропорции</string>
 
 </resources>

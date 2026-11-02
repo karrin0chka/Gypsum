@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">Gypsum</string>
-    <string name="logo">Калькулятор составляющих</string>
+    <string name="logo">Калькулятор компонентов</string>
     <string name="volumeHeadline">Введите объем раствора (мл):</string>
     <string name="volumeInput">0</string>
     <string name="calculatorButton">Рассчитать</string>

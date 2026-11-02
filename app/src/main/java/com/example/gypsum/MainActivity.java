@@ -42,22 +42,25 @@ public class MainActivity extends AppCompatActivity {
         calculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(volumeInput.getText().toString().trim().equals("")) {
+                if(volumeInput.getText().toString().trim().isEmpty()) {
                     Toast.makeText(MainActivity.this, R.string.volumeInputError, Toast.LENGTH_SHORT).show();
                 } else {
-                    int gypsumValue = Integer.parseInt(volumeInput.getText().toString()) / 10;
-                    String gypsumValueStr = Integer.toString(gypsumValue);
+                    double gypsumIndex = 0.62;
+                    double waterIndex = 1.88;
+                    double svvIndex = 124;
 
-                    int waterValue = Integer.parseInt(volumeInput.getText().toString()) / 5;
-                    String waterValueStr = Integer.toString(waterValue);
+                    double gypsumValue = Integer.parseInt(volumeInput.getText().toString()) / gypsumIndex;
+                    double gypsumValueRound = Math.round(gypsumValue * 10) / 10.0;
 
-                    int svvValue = Integer.parseInt(volumeInput.getText().toString()) / 2;
-                    String svvValueStr = Integer.toString(svvValue);
+                    double waterValue = Integer.parseInt(volumeInput.getText().toString()) / waterIndex;
+                    double waterValueRound = Math.round(waterValue * 10) / 10.0;
 
+                    double svvValue = Integer.parseInt(volumeInput.getText().toString()) / svvIndex;
+                    double svvValueRound = Math.round(svvValue * 100) / 100.0;
 
-                    gypsumOutput.setText(gypsumValueStr);
-                    waterOutput.setText(waterValueStr);
-                    svvOutput.setText(svvValueStr);
+                    gypsumOutput.setText(String.valueOf(gypsumValueRound));
+                    waterOutput.setText(String.valueOf(waterValueRound));
+                    svvOutput.setText(String.valueOf(svvValueRound));
                 }
             }
         });

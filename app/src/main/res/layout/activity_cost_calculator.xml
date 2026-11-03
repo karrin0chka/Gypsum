@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".costCalculator">
+
+    <RelativeLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/costCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/colorBackground"
+            android:text="@string/costCalculator"
+            android:textAlignment="center"
+            android:textColor="@color/colorMain"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dataHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/costCalculator"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="5sp"
+            android:text="@string/dataHeadline"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/typeHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataHeadline"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/typeHeadline"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/priceHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataHeadline"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="110sp"
+            android:text="@string/priceHeadline"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/massHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataHeadline"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="185sp"
+            android:text="@string/massHeadline"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/contentHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dataHeadline"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="270sp"
+            android:text="@string/contentHeadline"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gypsumType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/gypsumType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/gypsumPriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="5sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/gypsumMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="5sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/gypsumContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="5sp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/svvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="60sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/svvType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/svvPriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="45sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/svvMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="45sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/svvContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="45sp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/waxType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="100sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/waxType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/waxPriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="85sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/waxMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="85sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/waxContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="85sp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fragranceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="140sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/fragranceType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fragrancePriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="125sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fragranceMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="125sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fragranceContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="125sp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/wickType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="180sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/wickType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/wickPriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="165sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/wickMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="165sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/wickContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="165sp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/packagingType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_marginTop="220sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/packagingType"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/packagingPriceInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="205sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/packagingMassInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="185sp"
+            android:layout_marginTop="205sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/packagingContentInput"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeHeadline"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="205sp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="155sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/packagingType"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/colorClearButton"
+            android:text="@string/clearButton"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/calculatorButton"
+            android:layout_width="155sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/packagingType"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorMain"
+            android:text="@string/calculatorButton"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/costProductHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="15sp"
+            android:text="@string/costProductHeadline"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/costProductOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_marginStart="230sp"
+            android:layout_marginTop="15sp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/returnMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorClearButton"
+            android:text="@string/returnMainButton"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

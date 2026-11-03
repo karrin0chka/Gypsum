@@ -35,5 +35,16 @@
             android:backgroundTint="@color/colorMain"
             android:text="@string/componentCalculator"
             android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/costCalculatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/componentCalculatorButton"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/colorMain"
+            android:text="@string/costCalculator"
+            android:textSize="19sp" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

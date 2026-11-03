@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity2 extends AppCompatActivity {
 
     private Button componentCalculatorButton;
+    private Button costCalculatorButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +28,29 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
         componentCalculatorButton = findViewById(R.id.componentCalculatorButton);
+        costCalculatorButton = findViewById(R.id.costCalculatorButton);
 
         componentCalculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startNewActivity(v);
+                startMainActivity(v);
+            }
+        });
+
+        costCalculatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startCostCalculator(v);
             }
         });
     }
 
-    public void startNewActivity(View v) {
+    public void startMainActivity(View v) {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+    public void startCostCalculator(View v) {
+        Intent intent = new Intent(this, costCalculator.class);
         startActivity(intent);
     }
 }

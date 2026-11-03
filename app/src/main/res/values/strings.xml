@@ -32,6 +32,21 @@
     <string name="mainHeadline">Главная</string>
     <string name="returnMainButton">Назад</string>
 
+    <!-- страница Калькулятор компонентов -->
+    <string name="costCalculator">Калькулятор себестоимости</string>
+    <string name="dataHeadline">Введите данные:</string>
+    <string name="typeHeadline">Материал</string>
+    <string name="priceHeadline">Цена уп.</string>
+    <string name="massHeadline">Объем уп.</string>
+    <string name="contentHeadline">В изделии</string>
+
+    <string name="gypsumType">Гипс</string>
+    <string name="svvType">СВВ</string>
+    <string name="waxType">Воск</string>
+    <string name="fragranceType">Отдушка</string>
+    <string name="wickType">Фитиль</string>
+    <string name="packagingType">Упаковка</string>
+    <string name="costProductHeadline">Стоимость 1 ед. товара:</string>
 
 
 </resources>

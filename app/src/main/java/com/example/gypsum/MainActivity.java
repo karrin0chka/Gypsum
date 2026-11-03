@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
                     if(gypsumInputText.isEmpty() &&
                         waterInputText.isEmpty() &&
                         svvInputText.isEmpty()) {
-                        gypsumIndex = 0.62;
-                        waterIndex = 1.88;
-                        svvIndex = 124.0;
+                        gypsumIndex = 0.7;
+                        waterIndex = 2.12;
+                        svvIndex = 140.0;
                     } else if(!gypsumInputText.isEmpty() &&
                             !waterInputText.isEmpty() &&
                             !svvInputText.isEmpty()) {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         int svvInputValue = Integer.parseInt(svvInputText);
 
                         int mass = gypsumInputValue + waterInputValue + svvInputValue;
-                        double density = 2.153;
+                        double density = 1.907;
                         double volume = mass / density;
 
                         gypsumIndex = volume / gypsumInputValue;

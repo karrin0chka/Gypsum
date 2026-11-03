@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">Гипсомер</string>
-    <string name="logo">Калькулятор компонентов</string>
+
+    <!-- страница Калькулятор компонентов -->
+    <string name="componentCalculator">Калькулятор компонентов</string>
     <string name="volumeHeadline">Введите объем раствора (мл):</string>
     <string name="volumeInput">0</string>
 
@@ -25,5 +27,11 @@
 
     <string name="volumeInputError">Введите корреткное значение</string>
     <string name="proportionsInputError">Введите корреткные значения пропорции</string>
+
+    <!-- страница Главная -->
+    <string name="mainHeadline">Главная</string>
+    <string name="returnMainButton">Назад</string>
+
+
 
 </resources>

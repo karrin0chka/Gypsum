@@ -1,6 +1,7 @@
 package com.example.gypsum;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView gypsumOutput;
     private TextView waterOutput;
     private TextView svvOutput;
+    private Button returnMainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         gypsumOutput = findViewById(R.id.gypsumOutput);
         waterOutput = findViewById(R.id.waterOutput);
         svvOutput = findViewById(R.id.svvOutput);
+        returnMainButton = findViewById(R.id.returnMainButton);
 
         // обработчик события calculatorButton
         calculatorButton.setOnClickListener(new View.OnClickListener() {
@@ -122,5 +125,18 @@ public class MainActivity extends AppCompatActivity {
                 svvOutput.setText("");
             }
         });
+
+        // обработчик события returnMainButton
+        returnMainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                returnMainActivity(v);
+            }
+        });
+    }
+
+    public void returnMainActivity(View v) {
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
     }
 }

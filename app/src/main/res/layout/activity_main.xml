@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
@@ -15,11 +16,11 @@
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/logo"
+            android:id="@+id/componentCalculator"
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:background="@color/colorBackground"
-            android:text="@string/logo"
+            android:text="@string/componentCalculator"
             android:textAlignment="center"
             android:textColor="@color/colorMain"
             android:textSize="26sp"
@@ -29,7 +30,7 @@
             android:id="@+id/volumeHeadline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/logo"
+            android:layout_below="@+id/componentCalculator"
             android:layout_marginHorizontal="20sp"
             android:layout_marginTop="5sp"
             android:text="@string/volumeHeadline"
@@ -224,6 +225,18 @@
             android:layout_marginTop="15sp"
             android:hint="@string/svvOutput"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/returnMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorClearButton"
+            android:text="@string/returnMainButton"
+            android:textSize="19sp" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
